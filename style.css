@@ -1,93 +1,86 @@
-html, body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  * { 
-    margin: 0%;
-    padding: 0%;
-  }
-  
-  a {
-  
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+.Title {
+
+    color: white;
+    font-family: "Montserrat";
     
   }
   
-  .color {
+  .Name {
+    animation: color-change 5s infinite;
+  }
   
-    color: #292636;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: #1eff00; }
+    100% { color: #ff00d0; }
+  }
+  
+  .Name {
+  
+    font-family: "Montserrat";
     
   }
   
-  a:hover {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+  }
   
-    opacity: 0.7;
-    
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+  }
+  
+  a,
+  button {
+    color: white;
+  }
+  
+  .image-clickable {
+    margin-right: auto;
   }
   
   .logo {
-  
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    
+    height: 4.2rem;
+    margin-right: auto;
   }
   
-  nav {
-  
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #292636;
-    height: 8vh;
-    
-  }
-  
-  main {
-  
-    height: 92vh;
-    
-  }
-  
-  .nav-list {
-  
+  .nav-links {
     list-style: none;
-    display: flex;
-    
   }
   
-  .nav-list li {
-  
-    letter-spacing: 3px;
-    margin-left: 32px;
-    
+  .nav-links li {
+    display: inline-block;
+    padding: 0 1.25rem;
   }
   
-  img {
-  
-    border-radius: 25px;
-    width: 150px;
-    padding: 5px;
-    
+  .nav-links li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
   }
   
-  .by {
-  
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    transition: 0.3s;
-    
+  .nav-links li a:hover {
+    color: rgba(0, 173, 181, 0.8);
   }
   
-  .by:hover {
+  button {
+    background: #04bd70;
+    cursor: pointer;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+    margin-left: 20px;
+  }
   
-    opacity: 0.7; 
-    
+  button:hover {
+    background: rgba(0, 173, 181, 0.8);
   }
